@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title>Comments</title>
+  <link rel='stylesheet' href='styles.css'>
+</head>
+<body>
+  <h2>All Comments</h2>
+
+  <ul>
+    <% for (var i=0;i<comm.length;i++){%>
+      <li>
+          <span>title: <%= comm[i].name %></span>
+        <span>body: <%= comm[i].body %></span>
+      </li>
+    <%}%>
+    </ul>
+
+</body>
+</html>
